@@ -1,0 +1,47 @@
+<suite name= "orangehrm Test Suite">
+	 	
+	<test name = "orangehrm Test Case">
+		<parameter name = "uname" value ="Admin"></parameter>
+		<parameter name = "pswd" value ="Qedge123!@#"></parameter>
+		<classes>
+			<class name= "OrangeHrm.testcase.AdminLoginwithValidData"></class>
+			
+		</classes>
+		
+	</test>
+	
+	<test name = "Orangehrm invalid Test Case">
+		<parameter name = "yname" value ="abc"></parameter>
+		<parameter name = "posw" value ="xyz"></parameter>
+		<classes>
+			<class name="OrangeHrm.testcase.AdminLogInWithInvalidData"></class>
+		</classes>
+	</test> 
+	<test name = "New Emp Reg Test Case">
+		<parameter name = "fname" value = "Rakesh"></parameter>
+		<parameter name = "lname" value = "s"></parameter>
+		<classes>
+			<class name = "OrangeHrm.testcase.EmployeeRegTest"></class>
+		</classes>
+	</test>
+
+	<test name = "User Reg Test">
+		<parameter name = "role" value="ESS"></parameter>
+		<parameter name = "empname" value="Rakesh s"></parameter>
+		<parameter name = "uname" value="Rakesh06"></parameter>
+		<parameter name = "upsw" value="Rakesh0012@"></parameter>
+		<classes>
+			<class name = "OrangeHrm.testcase.UserRegTest"></class>
+		</classes>
+		
+	</test>
+	
+	<test name = "AdminLeave">
+		<parameter name = "uname" value ="Admin"></parameter>
+		<parameter name = "pswd" value ="Qedge123!@#"></parameter>
+		<classes>
+			<class name = "OrangeHrm.testcase.AdminLeave">
+			</class>
+		</classes>
+	</test>
+</suite>
